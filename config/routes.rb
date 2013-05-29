@@ -1,6 +1,8 @@
 Goals2::Application.routes.draw do
-  resources :goals
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
 
+  resources :goals
+  root to: 'goals#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
