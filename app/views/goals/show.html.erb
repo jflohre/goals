@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Goal:</b>
+  <%= @goal.name %>
+</p>
+<ol >
+<% @goal.steps.each do |step| %>
+  <li>
+    <p><%= step.name %> </p>
+  </li>
+<% end %>
+</ol>
+
+
+<%= link_to 'Edit', edit_goal_path(@goal) %> |
+<%= link_to 'Back', goals_path %>
