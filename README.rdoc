@@ -5,4 +5,16 @@ Goals of Goals:
   -viewing the steps in different formats
   -easy printing/sending to phone/ keeping track of them
   -daily qoutes
-  
+  -goal type? long term, short term? one day? places to see/business/education/finance/
+  -calander events?
+  -notifications/reminders?
+  -mtwtfss dates to add to
+  -Why/About/Home page
+  -posts page/for goals and just for in general
+  -option for private or public
+  -comment/inspiring
+  -cucumber/rspec testing TDD
+  -maybe use ember.js to update Goals, like the TODO app
+  -motivation section
+
+The main goal of the goals website is to inspire users and give advice on how they can meet their dreams
