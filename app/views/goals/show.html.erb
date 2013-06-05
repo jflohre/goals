@@ -1,13 +1,15 @@
+<% provide(:title, 'Current Goals') %>
 <p id="notice"><%= notice %></p>
 
 <p>
   <b>Goal:</b>
   <%= @goal.name %>
 </p>
+<p> Steps taken to reach goal:
 <ol >
 <% @goal.steps.each do |step| %>
   <li>
-    <p><%= step.name %> </p>
+     <p><%= step.name %> </p>
   </li>
 <% end %>
 </ol>

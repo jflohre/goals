@@ -1,8 +1,41 @@
 @import "bootstrap";
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
 body { padding-top: 60px; }
+h1{
+  font-size: 3em;
+}
+/* footer */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover { 
+      color: $grayDarker;
+    }
+  }  
+  small { 
+    float: left; 
+    margin-left: 1em;
+  }
+  ul {
+    float: right;
+    margin-right: 2em;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
 @import "bootstrap-responsive";
 
-
+// do we want a custom.css.scss for this file?
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

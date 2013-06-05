@@ -2,6 +2,7 @@ Goals of Goals:
   -User Sign up
   -Goals with steps
   -adding and removing addition steps
+
   -viewing the steps in different formats
   -easy printing/sending to phone/ keeping track of them
   -daily qoutes
@@ -16,5 +17,6 @@ Goals of Goals:
   -cucumber/rspec testing TDD
   -maybe use ember.js to update Goals, like the TODO app
   -motivation section
+  -notification system
 
 The main goal of the goals website is to inspire users and give advice on how they can meet their dreams

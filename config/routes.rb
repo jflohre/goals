@@ -1,9 +1,16 @@
 Goals2::Application.routes.draw do
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
-
+  resources :users do 
+    resources :goals 
+  end
+  
   resources :goals
-  root to: 'goals#index'
+  root to: 'static_pages#home'
+  match '/home' => 'menu#home'
 
+  match '/help',    to: 'static_pages#help'
+  match '/about',   to: 'static_pages#about'
+  match '/contact', to: 'static_pages#contact'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

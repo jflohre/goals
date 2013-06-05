@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Goals</title>
+    <title><%= full_title(yield(:title)) %></title>
     <meta name="description" content="Achieve your dreams">
     <meta name="viewport" content="width=device-width">
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -17,48 +17,21 @@
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-
-     <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="#">Goals</a>
-        <div class="nav-collapse">
-          <ul class="nav">
-            <li><%= link_to "Look at Goals", goals_path %></li>
-            <li><%= link_to "Motivation" %></li>
-            <li><%= link_to "About Us" %></li>
-            <li><%= link_to "Cart" %></li>
-            <% if user_signed_in? %>
-              <li>Logged in as <%= current_user.username %></li>
-              <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
-              <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
-            <% else %>
-              <li><%= link_to "Sign up", new_user_registration_path %></li>
-              <li><%= link_to "Login", new_user_session_path %></li>
-            <% end %>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+<%= render :partial =>'layouts/header' %>
 
   
 <div class="container">
     <div class="row">
       <div class="span9"><%= yield %></div>
       <div class="span3">
-        <h2>About Us</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h2>Daily Quote</h2>
+        <p><%= @quote %></p>
+        <p><%= @quote_name %></p>
       </div>
     </div>
   </div>
     
-    <%= render :partial => 'shared/footer' %>
+    <%= render :partial => 'layouts/footer' %>
     <%= javascript_include_tag "application" %>
   </body>
 </html>
