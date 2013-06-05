@@ -16,7 +16,7 @@ Goals of Goals:
   -comment/inspiring
   -cucumber/rspec testing TDD
   -maybe use ember.js to update Goals, like the TODO app
-  -motivation section
+  -motivation section - carosel of images and videos?
   -notification system
 
 The main goal of the goals website is to inspire users and give advice on how they can meet their dreams

@@ -17,6 +17,5 @@ class Quote < ActiveRecord::Base
   end
   def self.display_name(quote)
     Quote.where("description" => quote).pluck(:name).sample
-
   end
 end

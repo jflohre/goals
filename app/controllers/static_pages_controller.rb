@@ -5,4 +5,6 @@ class StaticPagesController < ApplicationController
   end
   def contact
   end
+  def motivation
+  end
 end

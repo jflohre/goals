@@ -10,7 +10,7 @@
     <%= csrf_meta_tags %>
     <script type="text/javascript" src="//use.typekit.net/qdk0eau.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+  
   </head>
   <body>
 
@@ -19,15 +19,22 @@
     <![endif]-->
 <%= render :partial =>'layouts/header' %>
 
-  
+
 <div class="container">
     <div class="row">
-      <div class="span9"><%= yield %></div>
+      <div class="span9">
+        <% if flash[:notice] %>
+          <div id="notice"><%= flash[:notice] %></div>
+        <% end %>
+        <%= yield %>
+      </div>
+    <% if @quote != nil %>
       <div class="span3">
         <h2>Daily Quote</h2>
         <p><%= @quote %></p>
         <p><%= @quote_name %></p>
       </div>
+      <% end %>
     </div>
   </div>
     

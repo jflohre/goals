@@ -6,7 +6,7 @@ describe "Static pages" do
   describe "Home page" do
     before {visit root_path}
     
-    it { should have_selector('h1', :text => 'Welcome') }
+    it { should have_selector('h1', :text => 'Welcome to Goals') }
     it {should have_selector('title', :text => full_title('Home'))}
   end
 
@@ -20,5 +20,10 @@ describe "Static pages" do
     before {visit about_path}
     it {should have_selector('h1', :text => 'About Us')}
     it {should have_selector('title', :text => full_title('About Us'))}
+  end
+  describe "Motivation page" do
+    before {visit motivation_path}
+    it { should have_selector('h1', :text => 'Motivation')}
+    it { should have_selector('title', :text => full_title('Motivation'))}
   end
 end

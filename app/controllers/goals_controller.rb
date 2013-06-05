@@ -3,16 +3,23 @@ class GoalsController < ApplicationController
   # GET /goals
   # GET /goals.json
   def index
-    @goals = current_user.goals
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @goals }
+    quote
+    if user_signed_in?
+      @goals = current_user.goals
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @goals }
+      end
+    else
+      flash[:notice] = 'Please login to view your current goals'
+      redirect_to '/users/login'
     end
   end
 
   # GET /goals/1
   # GET /goals/1.json
   def show
+    quote
     @goal = Goal.find(params[:id])
 
     respond_to do |format|

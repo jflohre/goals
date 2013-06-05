@@ -75,6 +75,7 @@ GEM
     guard-rspec (2.5.4)
       guard (>= 1.1)
       rspec (~> 2.11)
+    hashie (2.0.5)
     hike (1.2.2)
     i18n (0.6.1)
     journey (1.0.4)
@@ -116,6 +117,9 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails-gallery (0.3.2)
+      hashie (>= 2.0.0)
+      rails (>= 3.1)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -190,6 +194,7 @@ DEPENDENCIES
   jquery-rails
   pg (= 0.12.2)
   rails (= 3.2.13)
+  rails-gallery
   rspec-rails (= 2.11.0)
   sass-rails (~> 3.2.3)
   sqlite3
