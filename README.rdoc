@@ -1,3 +1,6 @@
+Currently located at: 
+http://lifemap-app.herokuapp.com/home
+
 Goals of Goals:
   -User Sign up
   -Goals with steps
