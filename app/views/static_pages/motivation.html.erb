@@ -1,20 +1,54 @@
+
 <% provide(:title, 'Motivation') %>
 <h1>Motivation</h1>
 
-<div id="myCarousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item"> <%= image_tag 'http://edudemic.com/wp-content/uploads/2013/04/motivation-board.jpg' %></div>
-    <div class="item"><%= image_tag 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxSWwVHmyJZfeqVNEzf-l-R1G5gn--6uTSZAYi-qexx1_AUfic' %>
+
+<div class="container-fluid">
+    <header>
+        <h1>Bootstrap Image Gallery Demo</h1>
+        <blockquote>
+            <p>Bootstrap Image Gallery is an extension to the <a href="http://twitter.github.com/bootstrap/javascript.html#modal">Modal</a> dialog of Twitter's <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> toolkit, to ease navigation between a set of gallery images.<br>
+            It features mouse and keyboard navigation, transition effects, fullscreen mode and slideshow functionality.</p>
+        </blockquote>
+        <p>
+            <button id="start-slideshow" class="btn btn-large btn-success" data-slideshow="5000" data-target="#modal-gallery" data-selector="#gallery a[rel=gallery]">Start Slideshow</button>
+            <button id="toggle-fullscreen" class="btn btn-large btn-primary" data-toggle="button">Toggle Fullscreen</button>
+        </p>
+    </header>
+    <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+<!--     <%= image_tag("rails.png", :data => {:gallery => "gallery"}, :title => "Apple") %>
+    <%= link_to image_tag("rails.png"), :data => {:gallery => 'gallery'}, :title => "Apple" %> -->
+    <%= link_to image_tag("http://farm3.static.flickr.com/2824/8997133968_b07370d115_s.jpg"), "http://farm4.static.flickr.com/3740/8994556987_a274079ba1_b.jpg", :data => {:gallery => 'gallery'}, :title => "Random Image" %>
+
+    <a href="https://www.google.com/images/srpr/logo3w.png" title="Google" data-gallery="gallery">
+            <img src='https://www.google.com/images/srpr/logo3w.png'></img>
+        </a>
 </div>
-    <div class="item"><%= image_tag 'http://www.fitfabcities.com/wp-content/uploads/2013/01/motivation-monday-jan-27.jpg' %></div>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+
+<!-- modal-gallery is the modal dialog used for the image gallery -->
+<div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+        <h3 class="modal-title"></h3>
+    </div>
+    <div class="modal-body"><div class="modal-image"></div></div>
+    <div class="modal-footer">
+        <a class="btn modal-download" target="_blank">
+            <i class="icon-download"></i>
+            <span>Download</span>
+        </a>
+        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000">
+            <i class="icon-play icon-white"></i>
+            <span>Slideshow</span>
+        </a>
+        <a class="btn btn-info modal-prev">
+            <i class="icon-arrow-left icon-white"></i>
+            <span>Previous</span>
+        </a>
+        <a class="btn btn-primary modal-next">
+            <span>Next</span>
+            <i class="icon-arrow-right icon-white"></i>
+        </a>
+    </div>
 </div>

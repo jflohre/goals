@@ -18,5 +18,9 @@ Goals of Goals:
   -maybe use ember.js to update Goals, like the TODO app
   -motivation section - carosel of images and videos?
   -notification system
+  -add blog for Goals
+  -Personal Mission Statement
+  -Vision Board
 
+  
 The main goal of the goals website is to inspire users and give advice on how they can meet their dreams

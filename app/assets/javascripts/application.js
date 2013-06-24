@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require bootstrap.min.js
+//= require load-image.min.js
+//= require bootstrap-image-gallery.js
+//= require main.js
 //= require_tree .

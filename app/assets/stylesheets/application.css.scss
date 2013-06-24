@@ -49,6 +49,9 @@ footer {
 .span9{
   max-width: 680px; //add 30 for margin
 }
+#modal-gallery{
+  // margin-top: 300px;
+}
 
 // do we want a custom.css.scss for this file?
 /*
@@ -62,5 +65,6 @@ footer {
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require vendor
  *= require_tree .
  */
