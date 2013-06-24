@@ -15,10 +15,12 @@ ActiveRecord::Schema.define(:version => 20130603213745) do
 
   create_table "goals", :force => true do |t|
     t.string   "name"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "user_id"
   end
+
+  add_index "goals", ["user_id", "created_at"], :name => "index_goals_on_user_id_and_created_at"
 
   create_table "quotes", :force => true do |t|
     t.string   "description"
@@ -29,9 +31,9 @@ ActiveRecord::Schema.define(:version => 20130603213745) do
 
   create_table "steps", :force => true do |t|
     t.string   "name"
+    t.integer  "goal_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "goal_id"
   end
 
   create_table "users", :force => true do |t|
