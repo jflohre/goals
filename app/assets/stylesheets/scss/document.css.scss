@@ -1,0 +1,42 @@
+
+.background-blue{
+  background-color: #00c5e8;
+}
+
+textarea, input[type="text"], input[type="password"], 
+input[type="datetime"], input[type="datetime-local"], 
+input[type="date"], input[type="month"], input[type="time"], 
+input[type="week"], input[type="number"], input[type="email"], 
+input[type="url"], input[type="search"], input[type="tel"], 
+input[type="color"], .uneditable-input{
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+h1{
+  background-image: -webkit-gradient(
+  linear,
+  left bottom, right top,
+  from(rgba(49, 178, 199, 1)),
+  to(rgba(189, 187, 110, 0.2))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+input[type="file"], input[type="image"], 
+input[type="submit"], input[type="reset"], 
+input[type="button"], input[type="radio"], 
+input[type="checkbox"] {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-image: none;
+  text-decoration: none;
+  background-color: #01616f;
+  color: #95dbe5;
+    &:hover{
+      color: #95dbe5;
+      background-color: #01616f;
+    }
+}

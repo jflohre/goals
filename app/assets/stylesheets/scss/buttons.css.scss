@@ -1,0 +1,27 @@
+// standard large button styles
+a{
+  color: #95dbe5;
+  text-decoration: underline;
+  &:visited{
+    color: #95dbe5;
+  }
+}
+
+a.btn {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background-image: none;
+   background-color: #00c5e8;
+   text-decoration: none;
+   &:hover { 
+      background-color: #00c5e8;
+    }
+    
+}
+
+a.light-text{
+  color: white;
+}
+
+

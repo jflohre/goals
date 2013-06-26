@@ -1,3 +1,20 @@
+// do we want a custom.css.scss for this file?
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require vendor
+ *= require_tree .
+ */
+@import 'scss/buttons.css.scss';
+@import 'scss/document.css.scss';
 @import "bootstrap";
 
 /* mixins, variables, etc. */
@@ -15,10 +32,11 @@ footer {
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
   a {
-    color: $gray;
+    color: #000;
     &:hover { 
       color: $grayDarker;
     }
+
   }  
   small { 
     float: left; 
@@ -40,6 +58,7 @@ footer {
   max-width: 950px;
 }
 @import "bootstrap-responsive";
+
 .container {
   max-width: 1010px;
 }
@@ -53,18 +72,5 @@ footer {
   // margin-top: 300px;
 }
 
-// do we want a custom.css.scss for this file?
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require vendor
- *= require_tree .
- */
+
+

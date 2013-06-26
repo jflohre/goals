@@ -6,5 +6,6 @@ Feature: Test
   Scenario: Home Page
   
     Given I am on the home page
-    Then I should see "Welcome to Goals"
+    Then I should see "Welcome to LifeMap"
+    
     # And I should see "Daily Quote"
