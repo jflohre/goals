@@ -21,39 +21,6 @@
 
 $grayMediumLight: #eaeaea;
 
-body { padding-top: 60px; }
-h1{
-  font-size: 3em;
-}
-/* footer */
-footer {
-  margin-top: 95px;
-  padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
-  a {
-    color: #000;
-    &:hover { 
-      color: $grayDarker;
-    }
-
-  }  
-  small { 
-    float: left; 
-    margin-left: 1em;
-  }
-  ul {
-    float: right;
-    margin-right: 2em;
-    list-style: none;
-    li {
-
-      float: left;
-      margin-left: 1em;
-    }
-  }
-}
-
 .container {
   max-width: 950px;
 }
