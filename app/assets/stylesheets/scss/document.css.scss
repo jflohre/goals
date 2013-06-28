@@ -26,18 +26,8 @@ h1, h2, h3{
 h1{
   font-size: 4.5em;
   display: inline-block;
-  // background-image: -webkit-gradient(
-  // linear,
-  // left bottom, right bottom,
-  // from(rgba(0, 165, 203, 1)),
-  // to(rgba(189, 187, 110, 1))
-  // );
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
- // background-color: rgb(0,171,203);
- //  @include filter-gradient(#00abcb, #b6b46c, horizontal);
- //  @include background-image(linear-gradient(left bottom, rgb(0,171,203) 0%,rgb(138,192,132) 50%,rgb(182,180,108) 100%));
-background: rgb(0,171,203);
+
+  background: rgb(0,171,203);
 background: -moz-linear-gradient(45deg,  rgb(0,171,203) 0%, rgb(138,192,132) 50%, rgb(182,180,108) 100%);
 background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgb(0,171,203)), color-stop(50%,rgb(138,192,132)), color-stop(100%,rgb(182,180,108)));
 background: -webkit-linear-gradient(45deg,  rgb(0,171,203) 0%,rgb(138,192,132) 50%,rgb(182,180,108) 100%);
@@ -45,7 +35,6 @@ background: -o-linear-gradient(45deg,  rgb(0,171,203) 0%,rgb(138,192,132) 50%,rg
 background: -ms-linear-gradient(45deg,  rgb(0,171,203) 0%,rgb(138,192,132) 50%,rgb(182,180,108) 100%);
 background: linear-gradient(45deg,  rgb(0,171,203) 0%,rgb(138,192,132) 50%,rgb(182,180,108) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00abcb', endColorstr='#b6b46c',GradientType=1 );
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: italic;
@@ -75,3 +64,7 @@ input[type="checkbox"] {
   font-weight: 300;
   line-height: 1.3em;
 }
+.main-container{
+  margin: 0 auto;
+}
+
