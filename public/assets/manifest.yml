@@ -1,12 +1,22 @@
 ---
+OpenSans-Light.ttf: OpenSans-Light-1a00d4cb8235c302375041720ae07a00.ttf
+OpenSans-Light/index.ttf: OpenSans-Light-1a00d4cb8235c302375041720ae07a00.ttf
+OpenSans-LightItalic.ttf: OpenSans-LightItalic-a71bf9f8a5cd228707a0ecf5a0c7f46b.ttf
+OpenSans-LightItalic/index.ttf: OpenSans-LightItalic-a71bf9f8a5cd228707a0ecf5a0c7f46b.ttf
+OpenSans-Regular.ttf: OpenSans-Regular-2d81b30d30c4e8e9bfab43363ce6695b.ttf
+OpenSans-Regular/index.ttf: OpenSans-Regular-2d81b30d30c4e8e9bfab43363ce6695b.ttf
+OpenSans-Semibold.ttf: OpenSans-Semibold-6a7c630b7a5430242c64c239860b6bbe.ttf
+OpenSans-Semibold/index.ttf: OpenSans-Semibold-6a7c630b7a5430242c64c239860b6bbe.ttf
+OpenSans-SemiboldItalic.ttf: OpenSans-SemiboldItalic-40e837b36689d6b053a7f50de422a331.ttf
+OpenSans-SemiboldItalic/index.ttf: OpenSans-SemiboldItalic-40e837b36689d6b053a7f50de422a331.ttf
 loading.gif: loading-b7ff30d20adcf2b850f420d17048930c.gif
 loading/index.gif: loading-b7ff30d20adcf2b850f420d17048930c.gif
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 application.js: application-f1285eea3073e2884514a5aa1949e4cd.js
 application/index.js: application-f1285eea3073e2884514a5aa1949e4cd.js
-application.css: application-86fec5e592d0746855a2f308cfd335ce.css
-application/index.css: application-86fec5e592d0746855a2f308cfd335ce.css
+application.css: application-9078286f6817d75f2996727d74ddc8c3.css
+application/index.css: application-9078286f6817d75f2996727d74ddc8c3.css
 jquery.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map
 jquery/index.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
