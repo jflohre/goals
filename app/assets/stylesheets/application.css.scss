@@ -13,6 +13,7 @@
  *= require vendor
  *= require_tree .
  */
+@import 'compass';
 @import 'scss/buttons.css.scss';
 @import 'scss/document.css.scss';
 @import "bootstrap";
